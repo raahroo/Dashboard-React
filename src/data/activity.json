@@ -1,0 +1,44 @@
+{ "activity": {
+    "labels": [
+        "StoreFront",
+         "Inventory Service",
+         "eComm User Service", 
+         "eComm Media Service", 
+         "eComm Customer Service",
+         "eComm Advertsing Service",
+         "eComm Catalog Service",
+         "eComm System Service",
+         "eComm Product Service"
+        ],
+    "datasets":[
+        {
+            "label": "Population",
+            "data":[
+                6,
+                14,
+                7,
+                13,
+                5,
+                15,
+                21,
+                18,
+                9
+            ],
+            "backgroundColor":[
+                "rgb(88, 24, 69)",
+                "rgb(144, 12, 63)",
+                "rgb(199, 0, 57)",
+                "rgb(255, 87, 51)",
+                "rgb(255, 195, 0)",
+                "rgb(218, 247, 166)",
+                "rgb(19, 141, 117)",
+                "rgb(46, 134, 193)",
+                "rgb(142, 68, 173)"
+            ],
+            "borderWidth": 1,
+            "borderColor": "#000",
+            "hoverBorderWidth": 3,
+            "hoverBorderColor":"rgb(255, 195, 0)"
+        }
+    ]
+}}

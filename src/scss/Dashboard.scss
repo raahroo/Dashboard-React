@@ -1,0 +1,68 @@
+@import './Colors.scss';
+
+.Dashboard {
+    background: $gray;
+    height: 100vh;
+
+    &__admin {
+        min-height: 226px;
+    }
+
+    &__panel {
+        background-color: $black;
+        height: 135vh;
+        padding: 150px 0 0 0;
+
+        .well {
+            background: $black;
+            color: $gray;
+            border-color: rgba(255,255,255,0.1);
+            margin-bottom: 0px;
+            border-radius: 0px;
+
+            &:hover {
+                background: $aqua-green;
+                color: $black;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__content {
+        padding: 60px 15px;
+    }
+
+    &__title {
+        padding: 0 0 0 15px;
+    }
+
+    &__dev {
+        button {
+            margin: 0 5px;
+            background: rgba(0,0,0,0.4);
+            color: $gray;
+            border: 0;
+            border-radius: 3px;
+
+            &:hover {
+                background: rgba(0,0,0,0.6);
+            }
+        }
+    }
+
+    &__devOps {
+        button {
+            padding: 20px;
+            margin: 7px;
+            border-radius: 3px;
+            min-width: 23.5%;
+
+            &:hover {
+                background: $aqua-green;
+                color: $gray;
+            }
+        }
+    }
+
+  
+}

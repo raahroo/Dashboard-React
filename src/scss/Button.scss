@@ -1,0 +1,16 @@
+@import './Colors.scss';
+.Button {
+    &__remove {
+        transition: all 0.3s;
+        border-radius: 100px;
+        width: 40px;
+        height: 40px;
+        color: $orange-remove-user;
+        font-size: 14px;
+        &:hover {
+            border: 1px solid $orange-remove-user;
+        }
+    }
+ }
+
+

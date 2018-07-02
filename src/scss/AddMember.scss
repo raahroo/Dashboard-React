@@ -1,0 +1,171 @@
+@import './Colors.scss';
+@import './Variables.scss';
+
+.AddMember {
+  &__close {
+    display: none;
+
+    &--visible{
+      display: block;
+    }
+  }
+
+  &__content {
+    position: relative;
+  }
+  margin-top: 15px;
+  position: absolute;
+  width: 48.5%;
+  height: 72px;
+}
+  
+.AddMemberCard {
+  display: flex;
+  padding: 16px 10px;
+  cursor: pointer;
+  margin-left: 5px;
+
+  &__text {
+    display: block;
+    text-align: left;
+    color: $green;
+
+    &__label {
+      margin: 0px;
+    }
+  }
+
+  &:hover {
+    background: $aqua-green;
+
+    .AddMemberCard__add {
+      background-color: $white;
+    }
+  }
+
+  .Card__text__label {
+    color: $green;
+    font-weight: 600;
+  }
+
+  &__add {
+    border-radius: 100px;
+    width: 40px;
+    height: 40px;
+    background-color: $aqua-green;
+    color: $green;
+    transform: rotate(45deg);
+    padding: 9px 13px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+
+.InputAddMember {
+  height: auto;
+  max-height: 300px;
+  padding: 0 15px;
+  background: $white;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  border: 1px solid $gray-border-light;
+  -webkit-box-shadow: 0px 1px 8px 2px rgba(0,0,0,0.25);
+  -moz-box-shadow: 0px 1px 8px 2px rgba(0,0,0,0.25);
+  box-shadow: 0px 1px 8px 2px rgba(0,0,0,0.25);
+
+  &__input {
+    margin: 16px 0;
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid $green;
+    outline: 0;
+    height: 30px;
+  }
+
+  &__notFound {
+    color: $green;
+    font-size: 14px;
+    margin: 0;
+  }
+
+  &__team {
+    font-size: 10px;
+    color: $dark-green;
+  }
+
+  &__action {
+    font-size: 10px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid $orange-add-member;
+    padding: 0;
+    width: 28px;
+  }
+
+  &__added {
+    color: $orange;
+    display: none;
+  }
+
+  &__noTeam {
+    width: 100%;
+    color: $green;
+    background: $light-green;
+    padding: 10px;
+  }
+}
+
+.InputList {
+  background: $white;
+  z-index: 1;
+  left: 0;
+ 
+  &__list {
+    overflow-y: scroll;
+    height: 230px;
+  }
+}
+
+.AddMember__close--visible{
+  display: block;
+  position: absolute;
+  z-index: 3;
+  right: 14px;
+  top: 26px;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  font-size: 7px;
+  color: $light-orange;
+}
+
+//Responsive
+
+@media only screen and (max-width: $tablet) {
+  .AddMember  {
+    left: 0;
+    width: 100%;
+  }
+
+  .AddMember__content {
+    margin-left: 5px;
+    width: 100%;
+  }
+
+  .AddMemberCard {
+    margin-left: 0px;
+    margin-right: 10px;
+    padding: 10px;
+  }
+
+  .InputAddMember {
+    width: 96%;
+  }
+
+  .AddMember__close--visible {
+    right: 40px;
+  }
+}
+

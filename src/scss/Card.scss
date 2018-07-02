@@ -1,0 +1,87 @@
+@import './Colors.scss';
+@import './Variables.scss';
+
+.Card, .Card--small {
+  display: flex;
+  transition: all 0.3s;
+
+  &__text {
+    display: block;
+    text-align: left;
+    padding: 0 10px;
+    margin: 0;
+    color: $dark-green;
+
+    &__label {
+      margin: 0;
+      max-width: 140px;
+    }
+    
+    &__name {
+      margin: 0;
+      font-weight: 600;
+      
+    }
+  }
+
+  &__avatar {
+    border-radius: 100px;
+    width: 40px;
+    height: 40px;
+  }
+
+  &:hover {
+    background-color: $aqua-green;
+  }
+
+}
+
+.Card {
+  padding: 16px 10px;
+}
+
+.Card--small {
+  padding: 10px;
+  border: 0;
+  cursor: no-drop;
+
+  .Card__avatar {
+    border-radius: 100px;
+    width: 30px;
+    height: 30px;
+  }
+  .Card__text__name, .Card__text__label {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 30px;
+    color: $dark-green;
+    display: inline;
+  }
+
+  .Card__text__label {
+    margin-left: 5px;
+  }
+}
+
+.CardList {
+  height: 240px;
+  overflow: hidden;
+  padding: 5px;
+  padding-top: 15px;
+}
+
+//Responsive
+
+@media only screen and (max-width: $tablet) {
+  .Card {
+    padding: 10px;
+  }
+
+  .Card--small {
+    padding: 8px 10px;
+  }
+  .CardList {
+    height: 145px;
+  }
+
+}

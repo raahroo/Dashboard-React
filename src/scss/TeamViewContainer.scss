@@ -1,0 +1,167 @@
+@import './Colors.scss';
+@import './Variables.scss';
+
+.TeamView {
+    top:10px;
+    max-width: 100%;
+    border: 1px solid $gray-border-medium;
+    height: 285px;
+    position: relative;
+    margin: 0 auto;
+    min-height: 135px;
+    border-radius: 3px;
+    margin-bottom: 25px;
+    &--opened {
+        top:10px;
+        max-width: 100%;
+        border: 1px solid $gray-border-medium;
+        position: relative;
+        height: auto !important;
+        margin: 0 auto;
+        min-height: 135px;
+        padding-bottom: 16px;
+        border-radius: 3px;
+        margin-bottom: 25px;
+    }
+
+    &__showall {
+        background: transparent;
+        color: transparent;
+        position: absolute;
+        cursor: pointer;
+        height: 40px;
+        width: 100%;
+        left: 0;
+        padding: 12px 0;
+        text-transform: uppercase;
+        font-size: 10px;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        bottom: -35px;
+        text-align: center;
+        border-radius: 3px;
+        font-weight: 600;
+
+        &:hover {
+            color:$blue;
+            background: $aqua-green;
+            border-left: 1px solid $gray-border-medium;
+            border-right: 1px solid $gray-border-medium;
+        }
+    }
+
+    &__showless {
+        background: $aqua-green;
+        position: absolute;
+        color: $blue;
+        display: none;
+        cursor: pointer;
+        height: 40px;
+        width: 100%;
+        left: 0;
+        padding: 12px 0;
+        text-transform: uppercase;
+        font-size: 10px;
+        text-align: center;
+        border-radius: 3px;
+        font-weight: 600;
+    }
+}
+
+.Label {
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: 600;
+    color: $gray-label;
+    margin: 0;
+    padding: 15px 0 0 5px;
+}
+
+.Team {
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: left;
+    color: #18332f;
+    position: absolute;
+    right: 0;
+    padding: 8px 10px;
+    margin: 10px 20px;
+    cursor: pointer;
+
+    &:hover {
+        background: $light-green;
+    }
+
+    &__label {
+        display: inline;
+    }
+
+    &__icon {
+        display: inline;
+        width: 20px;
+        margin: 0 0 0 8px;
+    }
+}
+
+.closed {
+    height: 218px !important;
+    .CardList {
+        height: 160px !important;
+    }
+}
+
+.closed-length {
+    height: 140px !important;
+    .CardList {
+        height: 100px;
+    }
+    .TeamView__showall {
+        display: none;
+    }
+}
+//Responsive
+
+@media only screen and (max-width: $tablet) {
+    .TeamView {
+        height: 190px;
+        &__showall {
+            position: absolute;
+            cursor: pointer;
+            height: 40px;
+            width: 535px;
+            left: -1px;
+            padding: 12px 0;
+            text-transform: uppercase;
+            font-size: 10px;
+            color: $dark-green;
+            background: $light-green;
+            border-left: 1px solid $gray-border-medium;
+            border-right: 1px solid $gray-border-medium;
+            bottom: -30px;
+           
+        }
+    }
+    
+    .TeamView, .TeamView--opened   {
+      max-width: 330px;
+
+      &__showall, &__showless {
+        max-width: 330px;
+      }
+    }
+
+    .Team__label {
+        display: none;
+    }
+
+    .Team__icon {
+        margin: 0;
+    }
+
+    .TeamView--opened {
+        margin-bottom: 25px;
+    }
+
+}
