@@ -19,25 +19,12 @@ export default class AddMember extends React.Component{
 		this.setState({
 			visible: true
 		});
-		let blockShowAll = document.getElementById('showall');
-		blockShowAll.style.display = 'none';
-		let closeTeamView = document.getElementById('teamView');
-		closeTeamView.classList.add('closed');
-		let showLessCards = document.getElementById('showless');
-		showLessCards.style.display = 'none';
 	}
 
 	closeAddMember(){
 		this.setState({
 			visible: false
 		});
-		let blockShowAll = document.getElementById('showall');
-		blockShowAll.style.display = null;
-		let closeTeamView = document.getElementById('teamView');
-		closeTeamView.classList.remove('closed');
-		closeTeamView.classList.remove('closed-length'); 
-		let showLessCards = document.getElementById('showless');
-		showLessCards.style.display = null;
 	}
 
 	render(){

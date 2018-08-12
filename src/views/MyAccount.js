@@ -22,19 +22,19 @@ export default class MyAccount extends React.Component{
                         </Col>
                         <Col xs={12} md={6} className="Dashboard__dev">
                             <Well>
-                                <h4><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> Continuous Delivery</h4>
+                                <h4><span className="glyphicon glyphicon-tasks" aria-hidden="true"></span> Continuous Delivery</h4>
                                 <button>Unit Tests</button><button>Infrastructure Tests</button><button>Platform Tests</button>
                             </Well>
                         </Col>
                         <Col xs={12} md={6} className="Dashboard__dev">
                             <Well>
-                                <h4><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> Continuous Deployment</h4>
+                                <h4><span className="glyphicon glyphicon-tasks" aria-hidden="true"></span> Continuous Deployment</h4>
                                 <button>Unit Tests</button><button>Infrastructure Tests</button><button>Platform Tests</button>
                             </Well> 
                         </Col>
                         <Col xs={12} className="Dashboard__devOps">
                             <Well>
-                                <h4><span class="glyphicon glyphicon-retweet" aria-hidden="true"></span> DevOps</h4>
+                                <h4><span className="glyphicon glyphicon-retweet" aria-hidden="true"></span> DevOps</h4>
                                 <button>Deploy</button><button>Monitor</button><button>Manage</button><button>Scale</button>
                             </Well>
                         </Col>

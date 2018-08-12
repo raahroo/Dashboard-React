@@ -6,28 +6,28 @@ export default class DashboardPanel extends React.Component{
         return(
             <Col xs={2} className="Dashboard__panel">
                 <Well>
-                    <span class="glyphicon glyphicon-expand" aria-hidden="true"></span> Section
+                    <span className="glyphicon glyphicon-expand" aria-hidden="true"></span> Section
                 </Well>
                 <Well>
-                    <span class="glyphicon glyphicon-expand" aria-hidden="true"></span> Section
+                    <span className="glyphicon glyphicon-expand" aria-hidden="true"></span> Section
                 </Well>
                 <Well>
-                    <span class="glyphicon glyphicon-expand" aria-hidden="true"></span> Section
+                    <span className="glyphicon glyphicon-expand" aria-hidden="true"></span> Section
                 </Well>
                 <Well>
-                    <span class="glyphicon glyphicon-expand" aria-hidden="true"></span> Section
+                    <span className="glyphicon glyphicon-expand" aria-hidden="true"></span> Section
                 </Well>
                 <Well>
-                    <span class="glyphicon glyphicon-expand" aria-hidden="true"></span> Section
+                    <span className="glyphicon glyphicon-expand" aria-hidden="true"></span> Section
                 </Well>
                 <Well>
-                    <span class="glyphicon glyphicon-expand" aria-hidden="true"></span> Section
+                    <span className="glyphicon glyphicon-expand" aria-hidden="true"></span> Section
                 </Well>
                 <Well>
-                    <span class="glyphicon glyphicon-expand" aria-hidden="true"></span> Section
+                    <span className="glyphicon glyphicon-expand" aria-hidden="true"></span> Section
                 </Well>
                 <Well>
-                    <span class="glyphicon glyphicon-expand" aria-hidden="true"></span> Section
+                    <span className="glyphicon glyphicon-expand" aria-hidden="true"></span> Section
                 </Well>
             </Col>
 
