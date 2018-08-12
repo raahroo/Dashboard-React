@@ -36,11 +36,9 @@ export const userReducer = (state = initialState, action) => {
 			id: Users.length + 1  // Auto Increment ID
 		};
 
-		let addUser =  Users.push(newName);    
 		return {
 			...state,
-			userName: addUser,
-			userList: Users,
+			userList: [...Users, newName]
 		};
 	default:
 		return state;

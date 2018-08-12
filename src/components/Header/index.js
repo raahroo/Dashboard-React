@@ -40,7 +40,7 @@ export default class Header extends React.Component{
                         My account
                     </NavItem>
                     <NavItem eventKey={3} href="#">
-                        <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>
+                        <span className="glyphicon glyphicon-log-out" aria-hidden="true"></span>
                     </NavItem>
                     </Nav>
                 </Navbar.Collapse>
