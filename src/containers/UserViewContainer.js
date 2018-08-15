@@ -17,10 +17,8 @@ class TeamViewContainer extends React.Component{
 		this.setState({
 			open: true
 		});
-	
 	}
 
-    
 	showLess() {
 		this.setState({
 			open: false
@@ -28,7 +26,6 @@ class TeamViewContainer extends React.Component{
 	}
 
 	render(){
-      
 		return(
 			<div id="teamView" className={this.state.open ? 'TeamView--opened container' : 'TeamView container'} >
 				<AddMember users={this.props.userList} label="Add a User" />
